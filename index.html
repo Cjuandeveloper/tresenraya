@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tres en Raya</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div id="main-menu">
+            <h1>Tres en Raya</h1>
+            <button id="playerVsPlayer" class="menu-button">Jugador vs Jugador</button>
+            <button id="playerVsComputer" class="menu-button">Jugador vs Computadora</button>
+        </div>
+        <div id="difficulty-menu" class="hidden">
+            <h1>Elige la Dificultad</h1>
+            <button id="easy" class="menu-button">Fácil</button>
+            <button id="hard" class="menu-button">Difícil</button><br>
+            <button id="backToMain" class="menu-button">Volver</button>
+        </div>
+        <div id="game" class="hidden">
+            <h2 id="game-title">Turno de <span id="player-turn">X</span></h2>
+            <div id="board">
+                <div class="cell" data-index="0"></div>
+                <div class="cell" data-index="1"></div>
+                <div class="cell" data-index="2"></div>
+                <div class="cell" data-index="3"></div>
+                <div class="cell" data-index="4"></div>
+                <div class="cell" data-index="5"></div>
+                <div class="cell" data-index="6"></div>
+                <div class="cell" data-index="7"></div>
+                <div class="cell" data-index="8"></div>
+            </div>
+            <div id="scoreboard">
+                <p>Victorias de X: <span id="x-wins">0</span></p>
+                <p>Victorias de O: <span id="o-wins">0</span></p>
+            </div>
+            <button id="backToMenu" class="menu-button">Volver al menú</button>
+        </div>
+        <div class="watermark">Developer @webmastercol</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
